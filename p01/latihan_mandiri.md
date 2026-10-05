@@ -26,3 +26,11 @@ Hapus baris `#include <iostream>` di `hello.cpp`, bangun ulang, lalu jelaskan ta
 Tahap yang gagal ada di tahap compiler nya, karena dia tidak mengenal objek std::cout ketika kita menghapus #include <iostream>
 
 Alasan pesan berbeda karena di latihan ke 2 itu hanya typo pada tanda kutip saja, sedangkan latihan 3 ini Direktif preprosesor (#include <iostream>) nya menghilang 
+
+## Latihan 4 – Build tanpa `-Wall -Wextra`
+
+Tugas: Bangun `rerata_awal.cpp` tanpa opsi `-Wall -Wextra`, lalu bandingkan pesan yang muncul dengan build menggunakan opsi tersebut.
+
+Pesan yang hilang: warning tentang variabel `tugas`, `uts`, dan `uas` yang dibuat tetapi belum digunakan.
+
+Alasan: Tanpa `-Wall -Wextra`, compiler tidak memberikan peringatan tersebut. Hal ini merugikan karena kesalahan atau bagian program yang belum selesai bisa tidak terlihat, sehingga program terlihat seperti berhasil padahal masih ada masalah.
