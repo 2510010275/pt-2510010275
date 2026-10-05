@@ -13,6 +13,7 @@ int main() {
     //         dihitung, dan bisa diawali 0, jadi pikirkan tipe yang tepat.
     string nama = "";
     string npm = "";
+    int semester = 3;
     // TODO 2: deklarasikan empat variabel nilai: kehadiran, mingguan, uts, uas.
     //         Nilai bisa berisi pecahan seperti 85.5.
     double kehadiran = 100.0;
@@ -28,6 +29,8 @@ int main() {
     cout << "NPM       : ";
     cin >> npm;
     // TODO 4: baca NPM.
+    cout << "Semester  : ";
+    cin >> semester;
 
     // TODO 5: baca keempat komponen nilai, satu per satu, dengan prompt seperti di atas.
     cout << "Kehadiran : ";
@@ -46,6 +49,7 @@ int main() {
     cout << "Mingguan  : " << mingguan << "\n";
     cout << "UTS       : " << uts << "\n";
     cout << "UAS       : " << uas << "\n";
+    cout << "Semester  : " << semester << "\n";
     // TODO 6: tampilkan semua data yang tadi dibaca, satu baris per data, rata seperti prompt.
 
     return 0;
